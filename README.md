@@ -19,6 +19,12 @@ Password: emilyspass
 
 > You can find more test users at [https://dummyjson.com/users](https://dummyjson.com/users)
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).  
+© 2025 Kavya Karanth. All rights reserved.
+
+
 ## Tech Stack
 
 - React.js
