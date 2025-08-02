@@ -6,6 +6,7 @@ import HomePage from "./pages/Home";
 import ProfilePage from "./pages/Profile";
 import PostsPage from "./pages/Posts";
 import Navbar from "./components/Navbar";
+import NetworkPage from "./pages/Network";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -37,6 +38,10 @@ function App() {
           path="/posts"
           element={isLoggedIn ? <PostsPage /> : <Navigate to="/" />}
         />
+        <Route
+          path="/network"
+          element={isLoggedIn ? <NetworkPage /> : <Navigate to="/" />}
+          />
       </Routes>
     </Router>
   );

@@ -22,11 +22,14 @@ export default function LoginPage({ setIsLoggedIn }) {
 
       const data = await res.json();
       localStorage.setItem("token", data.token);
+      localStorage.setItem("userId", data.id);
       setIsLoggedIn(true);
       navigate("/home");
     } catch (err) {
       setError(err.message);
     }
+    
+
   };
 
   return (

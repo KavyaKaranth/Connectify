@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import {
   FaHome,
   FaUser,
-  FaList,
+  FaPlus,
   FaSignOutAlt,
   FaUserFriends,
   FaEnvelope,
@@ -45,21 +45,23 @@ export default function Navbar({ setIsLoggedIn }) {
         <Link to="/network" className="hover:text-green-900 flex items-center gap-1">
           <FaUserFriends /> Network
         </Link>
+        <Link to="/posts" className="hover:text-green-900 flex items-center gap-1 cursor-pointer">
+  <FaPlus /> Post
+</Link>
+
         <Link to="/messages" className="hover:text-green-900 flex items-center gap-1">
           <FaEnvelope /> Messages
         </Link>
-        <Link to="/menu" className="hover:text-green-900 flex items-center gap-1">
+        <Link to="/menu" className="hover:text-green-900 flex items-center gap-1 cursor-pointer">
           <FaTh /> Menu
         </Link>
-        <Link to="/profile" className="hover:text-green-900 flex items-center gap-1">
+        <Link to="/profile" className="hover:text-green-900 flex items-center gap-1 cursor-pointer">
           <FaUser /> Profile
         </Link>
-        <Link to="/posts" className="hover:text-green-900 flex items-center gap-1">
-          <FaList /> Posts
-        </Link>
+        
         <button
           onClick={handleLogout}
-          className="hover:text-red-700 text-red-600 flex items-center gap-1"
+          className="hover:text-red-700 text-red-600 flex items-center gap-1 cursor-pointer"
         >
           <FaSignOutAlt /> Logout
         </button>
